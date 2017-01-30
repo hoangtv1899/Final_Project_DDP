@@ -1,0 +1,51 @@
+Developing Data Products 
+========================================================
+author: Hoang Viet Tran
+date: 01/30/2017
+transition: rotate
+transition-speed: slow
+
+<small>
+Final Project for the Developing Data Products 
+class offered by Coursera
+</small>
+
+Project Background
+========================================================
+The final project's requirements are to create a Shiny application 
+and to use Slidfy or RStudio Presnter to build a presentation. The basic
+requirements are outlined in the final project description for the class. 
+This project utilizes the famous **MNIST** hand digits data set available from Kaggle 
+to train a standard neural network model for hand digit recognition. The Shiny user 
+interface allows to run through different test images and their classification results. 
+The links to the **GitHub repo**, **RStudio Presentation**, and a **Shiny application** 
+are located at the last slide of this presentation.
+
+Data Used
+========================================================
+The **MNIST** data set downloaded from Kaggle includes a train set
+and a test set.
+They contain gray-scale images of hand-drawn digits from zero to nine.
+These images are 28 pixels in height and 28 pixels in width, for a total
+of 784 pixels in total.
+The training data set has 785 columns. The first column, called "label",
+is the digit that was drawn by the user. The rest of the columns contain
+the pixel-values of the associated image.
+The test data set, is the same as the training data set, except that it 
+does not contain the "label" column.
+
+Digit Recognizer in R
+========================================================
+After training the model we can look at the confusion matrix. The total
+error is 0.0413 which means 1-0.0413 = 0.9587 accuracy score.
+
+![confusion matrix](/Users/hoang/Documents/Data_Science_JHU/RFURF/hand_digits/figure/confusion_matrix.png)
+
+Links
+========================================================
+To run the Shiny application, click on the link to the **Shiny application** 
+found in the list below. The Shiny application should open in the **browser window** 
+presenting short write up and a slider.
+- GitHub repo: [https://github.com/voite1/Developing_Data_Products/tree/master/Final_Project](https://github.com/voite1/Developing_Data_Products/tree/master/Final_Project)
+- Shiny Application: [https://hoangtv1989.shinyapps.io/hand_digits/](https://hoangtv1989.shinyapps.io/hand_digits/)
+- This Presentation: [http://rpubs.com/voitel/ddp_final_presentation](http://rpubs.com/voitel/ddp_final_presentation)
